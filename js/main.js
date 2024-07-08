@@ -120,14 +120,13 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxqPxBwNNKuGCmpGVX5QR
 const form = document.forms['submit-to-google-sheet']
 
 
+
 form.addEventListener('submit', e => {
-    e.preventDefault()
+    e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-            setTimeout(() => {
-                alert("Your msg send successfully")
-            }, 10);
-            form.reset()
+            alert("Your message has been sent successfully");
+            form.reset();  // Reset the form
         })
-        .catch(error => console.error('Error!', error.message))
-})
+        .catch(error => console.error('Error!', error.message));
+});
