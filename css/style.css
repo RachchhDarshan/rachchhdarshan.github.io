@@ -1324,10 +1324,10 @@ footer .credits a {
     font-size: 10px;
   }
 }
-@media (min-width: 577px) {
+/* @media (min-width: 577px) {
   .timeline-box .timeline .timeline-title span,
   .timeline-box .timeline .timeline-text,
   .timeline-box .timeline .timeline-line {
     font-size: 5px;
   }
-}
+} */
